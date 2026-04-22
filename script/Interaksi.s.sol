@@ -9,7 +9,7 @@ contract Interaksi is Script {
     function run() external {
         uint256 deployerPrivateKey = vm.envUint("PK");
         address deployerAddress = vm.addr(deployerPrivateKey);
-        
+
         address contractAddr = vm.envOr("CA", address(0));
         uint256 valToSet = vm.envOr("SET_VALUE", uint256(888));
 
